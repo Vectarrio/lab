@@ -1,14 +1,19 @@
 body {
   margin: 0;
-  min-width: 960px;
+  min-width: 320px;
   font-family: "Jura", "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 32px;
+  line-height: 1.5;
   color: #f2f2f2;
   background-color: #080208;
   background-image: url("img/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -28,8 +33,13 @@ body {
   text-align: right;
 }
 
-.page-header a {
+.page-header a+a {
   margin-left: 56px;
+}
+
+.page-header a {
+  display: inline-block;
+  margin-bottom: 20px;
   color: #fea18d;
   text-decoration: none;
   background-repeat: no-repeat;
@@ -114,6 +124,18 @@ body {
   background-image: url("img/icon-css.svg");
 }
 
+.skill-c {
+  background-image: url("img/icon-c.png");
+}
+
+.skill-java {
+  background-image: url("img/icon-java.png");
+}
+
+.skill-asm {
+  background-image: url("img/icon-asm.png");
+}
+
 .level {
   margin: 4px 0 16px;
   padding: 0;
@@ -171,11 +193,16 @@ body {
 }
 
 .page-footer a {
-  margin-left: 56px;
+  display: inline-block;
+  margin-bottom: 20px;
   color: #fea18d;
   text-decoration: none;
   background-repeat: no-repeat;
   background-position: left;
+}
+
+.page-footer a+a {
+  margin-left: 56px;
 }
 
 .footer-email {
