@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  min-width: 320px;
+  min-width: 300px;
   font-family: "Jura", "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -10,6 +10,8 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
 }
+
+
 
 img {
   max-width: 100%;
@@ -213,4 +215,10 @@ img {
 .footer-phone {
   padding-left: 25px;
   background-image: url("img/icon-phone.svg");
+}
+
+@media screen and (max-width: 460px) {
+  .subheading {
+    font-size: 32px;
+  }
 }
